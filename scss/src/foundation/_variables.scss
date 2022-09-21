@@ -67,8 +67,8 @@ $blue-light: #b4d2f4;
 
 /* Font families */
 
-$playfair: 'Playfair Display', serif; /* 1 */
-$raleway: 'Raleway', 'HelveticaNeue', 'Helvetica', sans-serif; /* 2 */
+$playfair: "Playfair Display", serif; /* 1 */
+$raleway: "Raleway", "HelveticaNeue", "Helvetica", sans-serif; /* 2 */
 
 /* Font sizes */
 $fs-xs: 0.75rem; // 12px
@@ -78,11 +78,11 @@ $fs-lg: 1.125rem; // 18px
 $fs-xl: 1.5rem; // 24px
 
 $fs: (
-	xs: 0.75rem,
-	sm: 0.875rem,
-	base: 1rem,
-	lg: 1.125rem,
-	xl: 1.5rem,
+  xs: 0.75rem,
+  sm: 0.875rem,
+  base: 1rem,
+  lg: 1.125rem,
+  xl: 1.5rem,
 );
 
 /* Heading font sizes */
@@ -110,12 +110,12 @@ $fw-black: 900;
 =============================================*/
 
 $breakpoints: (
-	md: 48rem,
-	// 768px
-	lg: 64rem,
-	// 1024px
-	xl: 80rem,
-	// 1280px
+  md: 48rem,
+  // 768px
+  lg: 64rem,
+  // 1024px
+  xl: 80rem,
+  // 1280px
 );
 
 /*=====  End of Breakpoints  ======*/
@@ -125,30 +125,29 @@ $breakpoints: (
 =============================================*/
 
 $spacing: (
-	none: 0rem,
-	xxxs: 0.25rem,
-	// 4px
-	xxs: 0.5rem,
-	// 8px
-	xs: 0.75rem,
-	// 12px
-	sm: 1rem,
-	// 16px
-	md: 1.5rem,
-	// 24px
-	lg: 2rem,
-	// 32px
-	xl: 3rem,
-	// 48px
-	xxl: 4.5rem,
-	// 72px
-	xxxl: 6rem,
-	// 96px
+  none: 0,
+  xxxs: 0.25rem,
+  // 4px
+  xxs: 0.5rem,
+  // 8px
+  xs: 0.75rem,
+  // 12px
+  sm: 1rem,
+  // 16px
+  md: 1.5rem,
+  // 24px
+  lg: 2rem,
+  // 32px
+  xl: 3rem,
+  // 48px
+  xxl: 4.5rem,
+  // 72px
+  xxxl: 6rem,
+  // 96px
 ) !default;
 
 $shadows: (
-	base: 0px 4px 11px rgba(157, 157, 157, 0.21),
+  base: 0 4px 11px rgba(157, 157, 157, 0.21),
 );
 
 /*=====  End of Spacing  ======*/
-

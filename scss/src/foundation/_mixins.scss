@@ -9,29 +9,28 @@
  *
  */
 
- @mixin tablet {
-    @media (min-width: map-get($breakpoints, "md")) {
-      @content;
-    }
+@mixin tablet {
+  @media (min-width: map-get($breakpoints, "md")) {
+    @content;
   }
-  
-  @mixin laptop {
-    @media (min-width: map-get($breakpoints, "lg")) {
-      @content;
-    }
-  }
-  
-  @mixin desktop {
-    @media (min-width: map-get($breakpoints, "xl")) {
-      @content;
-    }
-  }
-  
-  @mixin padding($space) {
-    padding: map-get($spacing, $space);
-  }
+}
 
-  @mixin margin($space) {
-    margin: map-get($spacing, $space);
+@mixin laptop {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content;
   }
-  
+}
+
+@mixin desktop {
+  @media (min-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+
+@mixin padding($space) {
+  padding: map-get($spacing, $space);
+}
+
+@mixin margin($space) {
+  margin: map-get($spacing, $space);
+}
