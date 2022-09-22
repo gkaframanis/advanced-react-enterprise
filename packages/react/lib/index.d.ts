@@ -1,3 +1,3 @@
 import { Color } from "./atoms/Color";
-import Spacing from "./foundation/Spacing";
-export { Color, Spacing };
+import Text from "./atoms/Text";
+export { Color, Text };

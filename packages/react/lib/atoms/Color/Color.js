@@ -1,5 +1,5 @@
 import React from 'React';
-import Spacing from '../../foundation/Spacing.js';
+import { Spacing } from '@ds.e/foundation';
 import '@ds.e/scss/lib/Utilities.css';
 
 const Color = ({ hexCode, width = Spacing.sm, height = Spacing.sm }) => {
