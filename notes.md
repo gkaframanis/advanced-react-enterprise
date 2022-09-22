@@ -81,3 +81,12 @@ Manage all the packages in one repository.
 ***yarn lerna init***
 
 ***yarn add --dev react @types/react typescript***
+***yarn add --dev rollup rollup-plugin-typescript2***
+  - rollup.config.js file and add script in package.json file in react package.
+  - yarn build
+
+
+#### Playgrounds
+***yarn add --dev react react-dom @types/react-dom @types/react typescript parcel-bundler***
+
+***yarn add --dev nodemon***
