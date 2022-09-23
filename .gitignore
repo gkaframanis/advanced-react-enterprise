@@ -1,5 +1,5 @@
 node_modules
 **/lib
-dist
-.cache
+**/dist
+**/.cache
 yarn-error.log
