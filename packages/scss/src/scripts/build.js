@@ -35,6 +35,10 @@ const compile = (path, fileName) => {
     Fs.writeFileSync(Path.resolve(fileName), result.css.toString());
 };
 
+try {
+    Fs.mkdirSync(Path.resolve('lib'))
+} catch(e) {}
+
 compile('src/global.scss', 'lib/global.css');
 
 getComponents().forEach(component => {

@@ -10,7 +10,7 @@ export interface MarginProps {
     children: React.ReactNode
 }
 
-const Margin: React.FC<MarginProps> = ({ space = 'xxxs', children, left, right, top, bottom }) => {
+const Margin: React.FC<MarginProps> = ({ space = 'xxxs', left, right, top, bottom, children }) => {
     let className = ``;
 
     if (! left && ! right && ! top && ! bottom) {
