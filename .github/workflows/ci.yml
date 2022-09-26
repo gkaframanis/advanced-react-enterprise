@@ -1,0 +1,26 @@
+name: Build & Test CI
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    builds:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Install dependencies
+              run: yarn
+            - name: Build packages
+              run: yarn build
+            - name: Automated tests
+              run: yarn test
+            # - name: Visual regression tests
+            #   env:
+            #     CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+            #   run: yarn test:chromatic
