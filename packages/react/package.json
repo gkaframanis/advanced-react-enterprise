@@ -4,6 +4,9 @@
   "main": "lib/index.js",
   "type": "module",
   "license": "MIT",
+  "files": [
+    "lib"
+  ],
   "devDependencies": {
     "@babel/preset-env": "^7.19.1",
     "@babel/preset-react": "^7.18.6",

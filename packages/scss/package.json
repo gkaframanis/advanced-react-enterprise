@@ -6,6 +6,10 @@
   "dependencies": {
     "normalize-scss": "^7.0.1"
   },
+  "files": [
+    "lib",
+    "src"
+  ],
   "devDependencies": {
     "husky": "^4.3.8",
     "lint-staged": "^13.0.3",
