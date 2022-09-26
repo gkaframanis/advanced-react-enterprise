@@ -2,7 +2,7 @@ import React from 'react';
 import Select from './Select';
 
 // css
-import '@ds.e/scss/lib/Select.css';
+import '@gkaframanis.ds.e/scss/lib/Select.css';
 
 const options = [{
     label: 'Strict Black',

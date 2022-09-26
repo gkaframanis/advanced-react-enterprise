@@ -25,7 +25,8 @@
     "dev": "yarn lerna run dev",
     "test": "yarn lerna run test",
     "publish": "yarn test && yarn build && yarn lerna publish",
-    "commit": "yarn git-cz"
+    "commit": "yarn git-cz",
+    "commit-msg": "commitlint --edit"
   },
   "resolutions": {
     "postcss": "^8.4.16"

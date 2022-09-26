@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Color, { ColorProps } from './Color';
-import { Spacing } from '@ds.e/foundation'
+import { Spacing } from '@gkaframanis.ds.e/foundation'
 
 // css
 import '@ds.e/scss/lib/Utilities.css'

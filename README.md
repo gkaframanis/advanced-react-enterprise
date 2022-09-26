@@ -137,4 +137,9 @@ In the packages/react:
 [Conventional commits](https://conventionalcommits.org)
 - ***yarn add --dev commitizen cz-conventional-changelog -W*** (for the top root)
 
+Linting for our commits:
+- ***yarn add --dev @commitlint/cli @commitlint/config-conventional -W***
+[For husky to work correctly](https://stackoverflow.com/questions/66246587/how-to-fix-error-not-found-husky-run-when-committing-new-code)
+- *** yarn add husky --dev -W && npx husky-init && npm exec -- github:typicode husky-4-to-7 --remove-v4-config***
+
 ## Github actions /CI/CD
