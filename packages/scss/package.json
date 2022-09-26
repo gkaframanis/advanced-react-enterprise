@@ -1,5 +1,5 @@
 {
-  "name": "@ds.e/scss",
+  "name": "@gkaframanis.ds.e/scss",
   "version": "0.3.3",
   "main": "index.js",
   "license": "MIT",
@@ -35,5 +35,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "13732771ba093aaa853bed9edb8c64cf66a35fb9"
+  "gitHead": "60c9937d7c03fb356944b3defeb12cf7a02963a9"
 }

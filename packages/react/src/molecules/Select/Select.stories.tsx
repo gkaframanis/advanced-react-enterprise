@@ -1,6 +1,5 @@
 import React from 'react';
 import Select from './Select';
-import { addParameters } from '@storybook/react';
 
 // css
 import '@ds.e/scss/lib/Select.css';
