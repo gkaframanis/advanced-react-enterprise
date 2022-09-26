@@ -5,9 +5,12 @@
   "author": "Gregory Kaframanis <gkaframanis@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
     "lerna": "^5.5.2",
     "lerna-update-wizard": "^1.1.2"
   },
+  "private": true,
   "workspaces": {
     "packages": [
       "packages/*",
@@ -21,10 +24,15 @@
     "build": "yarn lerna run build",
     "dev": "yarn lerna run dev",
     "test": "yarn lerna run test",
-    "publish": "yarn test && yarn build && yarn lerna publish"
+    "publish": "yarn test && yarn build && yarn lerna publish",
+    "commit": "yarn git-cz"
   },
-
   "resolutions": {
     "postcss": "^8.4.16"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }

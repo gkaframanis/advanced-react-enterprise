@@ -133,4 +133,8 @@ In the packages/react:
     6. We need to follow semantic versioning. (Usually a minor for the first publish)
     7. Also makes a commit to github with the new tagged version.
 
+### Conventional commits
+[Conventional commits](https://conventionalcommits.org)
+- ***yarn add --dev commitizen cz-conventional-changelog -W*** (for the top root)
+
 ## Github actions /CI/CD
