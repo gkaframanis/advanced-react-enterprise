@@ -1,6 +1,6 @@
 {
   "name": "@ds.e/foundation",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "main": "lib/index.js",
   "license": "MIT",
   "devDependencies": {
@@ -18,5 +18,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "fb45355d19d414bed544cba0467f410f360e5e3b"
 }
