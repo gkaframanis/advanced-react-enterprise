@@ -90,3 +90,47 @@ Manage all the packages in one repository.
 ***yarn add --dev react react-dom @types/react-dom @types/react typescript parcel-bundler***
 
 ***yarn add --dev nodemon***
+
+
+## Unit testing atomic components
+In the packages/react: 
+- ***yarn add --dev jest @types/jest @babel/preset-env @babel/preset-typescript @babel/preset-react @testing-library/react @testing-library/jest-dom jest-environment-jsdom***
+
+In the packages/foundation:
+- ***yarn add --dev jest @types/jest @babel/preset-env @babel/preset-typescript jest-environment-jsdom***
+
+## Storybook with react
+In the packages/react:
+- ***yarn add --dev @storybook/react***
+- ***yarn add --dev @storybook/preset-typescript***
+- ***yarn add --dev babel-loader***
+- ***yarn add --dev @storybook/addon-controls***
+
+
+[chromatic.com](https://chromatic.com)
+- ***yarn add --dev chromatic***
+- ***yarn chromatic --project-token=##############***
+- Let it add the script command to our package.json file.
+
+## Publish to npm
+
+1. + Add organization
+2. Unlimited public packages
+3. In terminal:
+   1. npm login
+   2. npm publish (but we have 3 packages)
+4. We have been using lerna
+   1. Add to the packages package.json file: 
+    
+      "publishConfig": {
+          "access": "public"
+        }
+    
+    2. To the playground package.json ==> ***"private": true***
+    3. Lerna will the control the version numbers.
+    4. ***npm login*** (username, password, email)
+    5. ***yarn lerna publish***
+    6. We need to follow semantic versioning. (Usually a minor for the first publish)
+    7. Also makes a commit to github with the new tagged version.
+
+## Github actions /CI/CD
