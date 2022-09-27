@@ -5,10 +5,18 @@
   "author": "Gregory Kaframanis <gkaframanis@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-lerna-scopes": "^17.0.2",
     "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
     "lerna": "^5.5.2",
-    "lerna-update-wizard": "^1.1.2"
+    "lerna-update-wizard": "^1.1.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.12.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-prettier": "^2.0.0"
   },
   "private": true,
   "workspaces": {
@@ -25,6 +33,9 @@
     "dev": "yarn lerna run dev",
     "test": "yarn lerna run test",
     "publish": "yarn test && yarn build && yarn lerna publish",
+    "lint": "lint \"packages/**/src/**/*.{ts,tsx,js,cjs}\"",
+    "lint:fix": "yarn lint --fix",
+    "pre-commit": "lint-staged",
     "commit": "yarn git-cz",
     "commit-msg": "commitlint --edit"
   },
@@ -35,5 +46,10 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "lint-staged": {
+    "packages/**/src/**/*.{ts,tsx,js,jsx,cjs,scss,css}": [
+      "yarn lint:fix"
+    ]
   }
 }
